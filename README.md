@@ -23,6 +23,13 @@ To run the RP image:
 
 	docker run -it -p 8443:8443 fediz/rp
 
+docker-compose
+--------------
+
+A docker-compose.yml file is included, and it will start both the IDp and RP tomcat instances (instead of issuing separate commands to build and run each image). If docker-compose is installed on the system, just run:
+
+	docker-compose build && docker-compose up
+
 
 Usage
 ---

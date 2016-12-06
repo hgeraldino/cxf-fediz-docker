@@ -1,0 +1,10 @@
+idp:
+  build: idp/
+  ports:
+    - "9443:9443"     # Tomcat HTTPS port
+rp:
+  build: rp/
+  links:
+    - idp
+  ports:
+    - "8443:8443"     # Tomcat HTTPS port	
